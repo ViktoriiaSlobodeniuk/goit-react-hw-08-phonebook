@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Form, Label, Field } from './ContactsForm.styled';
 import { Button, ErrorMessage } from './ContactsForm.styled';
 import { schema } from './validSchema';
-import { getContacts } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { getContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 
 const initialValues = {
   name: '',

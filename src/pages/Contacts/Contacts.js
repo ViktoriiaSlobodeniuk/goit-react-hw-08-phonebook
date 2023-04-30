@@ -1,15 +1,15 @@
 import { ContactsForm } from 'components/ContactsForm/ContactsForm';
 import { ContactsList } from 'components/ContactsList/ContactsList';
 import { Filter } from 'components/Filter/Filter';
+import { StyledDiv } from './Contacts.styled';
 
 export default function ContactsPage() {
   return (
-    <div>
-      <h1>Phonebook</h1>
+    <StyledDiv>
+      <h1>Your personal Phonebook</h1>
       <ContactsForm />
-      <h2>Contacts</h2>
       <Filter />
       <ContactsList />
-    </div>
+    </StyledDiv>
   );
 }

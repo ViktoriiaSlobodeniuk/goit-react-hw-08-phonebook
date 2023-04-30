@@ -9,7 +9,8 @@ import { BrowserRouter } from 'react-router-dom';
 import 'modern-normalize/modern-normalize.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <>
+    {/* <React.StrictMode> */}
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter basename="/goit-react-hw-08-phonebook">
@@ -18,5 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </PersistGate>
     </Provider>
     <GlobalStyle />
-  </React.StrictMode>
+
+    {/* </React.StrictMode> */}
+  </>
 );
